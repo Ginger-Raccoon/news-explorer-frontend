@@ -1,0 +1,11 @@
+@import url('./_saved/card__button_save_saved.css');
+@import url('./_unsaved/card__button_save_unsaved.css');
+
+.card__button_save {
+  width: 40px;
+  border-radius:8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+

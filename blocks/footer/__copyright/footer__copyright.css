@@ -1,0 +1,6 @@
+.footer__copyright {
+  grid-column-start: span 2;
+  color: #b6bcbf;
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -1,0 +1,7 @@
+@import url('./__text/empty__text.css');
+@import url('./__loader/empty__loader.css');
+
+.empty {
+  background: #f5f6f7;
+  padding: 40px 0;
+}

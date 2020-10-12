@@ -1,0 +1,7 @@
+@import url('./__avatar/about__avatar.css');
+@import url('./__title/about__title.css');
+@import url('./__text/about__text.css');
+
+.about {
+  margin: 32px 16px 0px;
+}

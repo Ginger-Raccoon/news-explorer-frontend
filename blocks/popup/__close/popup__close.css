@@ -1,0 +1,8 @@
+.popup__close {
+  right: 16px;
+  top: -44px;
+  width: 24px;
+  z-index: 2;
+  position: absolute;
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+.card__button_save_unsaved {
+  background-image: url("../../../../../src/images/save.svg");
+}
+
+.card__button_save_unsaved:hover {
+  background-image: url("../../../../../src/images/save_hover.svg");
+}

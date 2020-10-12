@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>News explorer</title>
+  <link rel="shortcut icon" href="<%=require('./images/favicon.png')%>" type="image/png">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+  <!--При открытии формы на боди будет ставится, body_OvHidden, чтобы не было прокрутки вниз -->
+<body class="body">
+  <div class="page">
+    <header class="header page__section">
+      <!-- header__top_mobile добавляется при открытии мобильного меню-->
+      <div class="header__top">
+        <a href="#" class="header__logo link">NewsExplorer</a>
+        <!-- header__button_sandwich меняется на header__button_close-->
+        <a href="#" class="header__button header__button_sandwich  link"></a>
+        <!-- header__menu_mobile добавляется при открытии мобильного меню-->
+        <nav class="header__menu">
+          <ul class="menu list">
+           <!-- menu__li_unlogin скрывает кнопку -->
+            <li class="menu__li"><a href="#" class="menu__link link">Главная</a></li>
+            <li class="menu__li"><a href="#" class="menu__link link">Сохранённые статьи</a></li>
+            <li class="menu__li menu__li_unlogin"><a class="menu__link link">Грета</a></li>
+           <!-- menu__li_needAuth показывает кнопку неавторизованному пользователю -->
+            <li class="menu__li menu__li"><button class="button menu__button">Авторизоваться</button></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="search header__search">
+        <h1 class="search__title">Что творится в мире?</h1>
+        <p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+        <form action="" class="search__form">
+          <input type="text" class="search__request" placeholder="Политика" required>
+          <button class="search__begin button">Искать</button>
+        </form>
+        
+      </section>
+    </header>
+    <section class="main page__section">
+      <h2 class="main__title">Результаты поиска</h2>
+      <!-- Пример верстки карточки -->
+      <div class="main__cards">
+        <div class="card main__card">
+          <div class="card__photo">
+            <img src="<%=require('./images/forcardexample.png')%>" alt="" class="card__img">
+            <!-- card__button_saved сохраняет статью -->
+            <div class="card__buttons">
+              <button class="card__button card__button_auth button">Войдите, чтобы сохранять статьи</button>
+              <button class="card__button card__button_save card__button_save_unsaved button"></button>
+            </div>
+          </div>
+          <span class="card__date">2 августа, 2019</span>
+          <h3 class="card__title">Национальное достояние – парки</h3>
+          <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
+          <span class="card__source">Лента.ру</span>
+        </div>
+      </div>
+      <button class="main__more button">Показать еще</button>
+    </section>
+    <section class="empty page__section">
+      <div class="empty__loader"></div>
+      <p class="empty__text">Поиск...</p>
+    </section>
+    <section class="about page__section">
+      <img src="<%=require('./images/foravatarexample.png')%>" alt="" class="about__avatar">
+      <h2 class="about__title">Об авторе</h2>
+      <p class="about__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+      <p class="about__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+    </section>
+    <!-- popup_isOpen открывает все попапы-->
+    <div class="popup popup__auth">
+      <div class="popup__content">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+        <h3 class="popup__title">Вход</h3>
+        <form action="" class="popup__form">
+          <div class="popup__input-container">
+            <p class="popup__text">Email</p>
+            <input type="text" class="popup__input">
+            <!--оставленно для примера-->
+            <span class="popup__error-message">Неправильный формат email</span>
+          </div>
+          <div class="popup__input-container">
+            <p class="popup__text">Пароль</p>
+            <input type="text" class="popup__input">
+            <span class="popup__error-message"></span>
+          </div>
+          <button class=" popup__button popup__button_disabled">Войти</button>
+          <div class="popup__input-container">
+            <p class="popup__text popup__text_and">или<a class="popup__text popup__text_link link">Зарегистрироваться</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup__registration">
+      <div class="popup__content">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+        <h3 class="popup__title">Регистрация</h3>
+        <form action="" class="popup__form">
+          <div class="popup__input-container">
+            <p class="popup__text">Email</p>
+            <input type="text" class="popup__input">
+            <!--оставленно для примера-->
+            <span class="popup__error-message">Неправильный формат email</span>
+          </div>
+          <div class="popup__input-container">
+            <p class="popup__text">Пароль</p>
+            <input type="text" class="popup__input">
+            <span class="popup__error-message"></span>
+          </div>
+          <div class="popup__input-container">
+            <p class="popup__text">Имя</p>
+            <input type="text" class="popup__input">
+            <span class="popup__error-message"></span>
+          </div>
+          <button class=" popup__button popup__button_disabled">Зарегистрироваться</button>
+          <div class="popup__input-container">
+            <p class="popup__text popup__text_and">или<a class="popup__text popup__text_link link">Войти</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup__success">
+      <div class="popup__content">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+        <div class="popup__inpit-container">
+          <h3 class="popup__title">Пользователь успешно зарегистрирован!</р>
+          <a href="" class="popup__text popup__text_link link">Войти</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer page__section">
+      <ul class="footer__list list footer__links">
+        <li class=""><a href="#" class="footer__link footer__link_main link">Главная</a></li>
+        <li class=""><a href="#" class="footer__link footer__link_ynd link">Яндекс.Практикум</a></li>
+      </ul>
+      <ul class="footer__list list footer__social">
+        <li><a href="" class="footer__link link"><img src="<%=require('./images/github.png')%>" alt="" class="footer__link footer__link_git"></a></li>
+        <li><a href="" class="footer__link link"><img src="<%=require('./images/Facebook.png')%>" alt="" class="footer__link footer__link_facebook"></a></li>
+      </ul>
+      <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+    </footer>
+  </div>
+  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@import url('../__logo/header__logo.css');
+@import url('./_mobile/header__top_mobile.css');
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #C4C4C4 1px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  padding: 16px;
+}

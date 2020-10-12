@@ -1,0 +1,8 @@
+.empty__text {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+  display: flex;
+  justify-content: center;
+}

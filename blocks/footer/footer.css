@@ -1,0 +1,10 @@
+@import url('./__link/footer__link.css');
+@import url('./__links/footer__links.css');
+@import url('./__social/footer__social.css');
+@import url('./__copyright/footer__copyright.css');
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px 16px 20px;
+}
