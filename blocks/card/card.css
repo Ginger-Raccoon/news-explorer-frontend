@@ -8,6 +8,7 @@
 @import url('./__source/card__source.css');
 
 .card {
+  position: relative;
   max-width: 256px;
   background: #fff;
   border-radius: 16px;
@@ -16,5 +17,5 @@
   max-height: 100%;
   flex-direction: column;
   min-width: 288px;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }

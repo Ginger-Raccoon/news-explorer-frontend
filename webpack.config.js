@@ -9,7 +9,8 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 
 module.exports = {
     entry: {
-        main: './src/script.js'
+        main: './src/scripts/script.js',
+        favorit: './src/scripts/favorit.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -47,14 +48,14 @@ module.exports = {
             {
                     test: /\.css$/i,
                     use: [
-                                    (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-                                    {
-                                      loader: 'css-loader',
-                                      options: {
-                                        importLoaders: 2
-                                      }  
-                                    },
-                                    'postcss-loader'
+                        (isDev ? 'style-loader' : { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../' } }),
+                        {
+                          loader: 'css-loader',
+                          options: {
+                            importLoaders: 2
+                          }
+                        },
+                          'postcss-loader',
                             ]
             }
         ]
@@ -70,7 +71,15 @@ module.exports = {
             // Означает, что:
             inject: false, // стили НЕ нужно прописывать внутри тегов
             template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
-            filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+            filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+            chunks: ['main'] //указываем точку входа первой страницы
+        }),
+        new HtmlWebpackPlugin({
+            // Означает, что:
+            inject: false, // стили НЕ нужно прописывать внутри тегов
+            template: './src/favorit.html', // откуда брать образец для сравнения с текущим видом проекта
+            filename: 'favorit.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+            chunks: ['favorit'] //указываем точку входа второй страницы
         }),
         new OptimizeCssAssetsPlugin({ // подключите плагин после MiniCssExtractPlugi
             assetNameRegExp: /\.css$/g,

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News explorer</title>
+    <link rel="shortcut icon" href="<%=require('./images/favicon.png')%>" type="image/png">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  </head>
+<body class="body">
+  <div class="page">
+    <!-- header_white-theme белая тема "шапки"-->
+    <header class="header header_white-theme page__section">
+      <!-- header__top_mobile добавляется при открытии мобильного меню-->
+      <div class="header__top">
+        <!-- header__logo_white-theme белая тема лого-->
+        <a href="#" class="header__logo header__logo_white-theme link">NewsExplorer</a>
+        <!-- header__button_sandwich меняется на header__button_close-->
+        <!-- header__button_sandwich_white-theme белая тема бургера -->
+        <a href="#" class="header__button header__button_sandwich header__button_sandwich_white-theme link"></a>
+        <!-- header__menu_mobile добавляется при открытии мобильного меню-->
+        <nav class="header__menu ">
+          <ul class="menu list">
+            <li class="menu__li"><a href="#" class="menu__link link">Главная</a></li>
+            <li class="menu__li"><a href="#" class="menu__link link">Сохранённые статьи</a></li>
+            <li class="menu__li menu__li"><button class="button menu__button">Грета</button></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="search header__search">
+        <h1 class="search__title">Грета, у вас 5 сохранённых статей</h1>
+        <p class="search__subtitle">По ключевым словам: <span class="search__keyword">Природа, Тайга</span> и <span class="search__keyword">2-м другим.</span> </p>
+        
+      </section>
+    </header>
+    <section class="main page__section">
+      <div class="main__cards">
+        <div class="card main__card">
+          <div class="card__photo">
+            <img src="<%=require('./images/forcardexample.png')%>" alt="" class="card__img">
+            <!-- card__button_saved сохраняет статью -->
+            <div class="card__buttons">
+              <button class="card__button card__button_category button">Природа</button>
+              <button class="card__button card__button_delete button"></button>
+            </div>
+          </div>
+          <span class="card__date">2 августа, 2019</span>
+          <h3 class="card__title">Национальное достояние – парки</h3>
+          <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
+          <span class="card__source">Лента.ру</span>
+        </div>
+        <div class="card main__card">
+          <div class="card__photo">
+            <img src="<%=require('./images/forcardexample.png')%>" alt="" class="card__img">
+            <!-- card__button_saved сохраняет статью -->
+            <div class="card__buttons">
+              <button class="card__button card__button_category button">Природа</button>
+              <button class="card__button card__button_delete button"></button>
+            </div>
+          </div>
+          <span class="card__date">2 августа, 2019</span>
+          <h3 class="card__title">Национальное достояние – парки</h3>
+          <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
+          <span class="card__source">Лента.ру</span>
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer_favorit page__section">
+      <ul class="footer__list list footer__links">
+        <li class=""><a href="#" class="footer__link footer__link_main link">Главная</a></li>
+        <li class=""><a href="#" class="footer__link footer__link_ynd link">Яндекс.Практикум</a></li>
+      </ul>
+      <ul class="footer__list list footer__social">
+        <li><a href="" class="footer__link link"><img src="<%=require('./images/github.png')%>" alt="" class="footer__link footer__link_git"></a></li>
+        <li><a href="" class="footer__link link"><img src="<%=require('./images/Facebook.png')%>" alt="" class="footer__link footer__link_facebook"></a></li>
+      </ul>
+      <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+    </footer>
+   
+</div>
+  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>

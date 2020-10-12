@@ -1,0 +1,29 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+@import url('../blocks/link/link.css');
+@import url('../blocks/button/button.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/_white-theme/header_white-theme.css');
+@import url('../blocks//menu/menu.css');
+@import url('../blocks/list/list.css');
+@import url('../blocks/search/search.css');
+@import url('../blocks/main/main.css');
+@import url('../blocks/card/card.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/_favorit/footer_favorit.css');
+
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.page::before {
+  background-color: #000;
+  opacity: .5;
+}

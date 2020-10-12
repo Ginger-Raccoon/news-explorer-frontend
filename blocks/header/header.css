@@ -2,9 +2,9 @@
 @import url('./__menu/header__menu.css');
 @import url('./__button/header__button.css');
 @import url('./__search/header__search.css');
+@import url('./_photo/header_photo.css');
 
 .header {
-  background-image: url('../../src/images/main_background_img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
