@@ -1,6 +1,6 @@
 'use strict'
 
-import '../../pages/favorit.css';
+import '../pages/favorit/favorit.css';
 
 (function () {
 

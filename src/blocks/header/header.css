@@ -1,0 +1,15 @@
+
+@import url('./__top/header__top.css');
+@import url('./__menu/header__menu.css');
+@import url('./__button/header__button.css');
+@import url('./__search/header__search.css');
+@import url('./_photo/header_photo.css');
+
+
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}

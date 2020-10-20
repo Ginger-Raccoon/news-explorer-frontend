@@ -1,7 +1,0 @@
-.card__button_delete {
-  width: 40px;
-  border-radius:8px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('../../../../src/images/button_delete.svg');
-}

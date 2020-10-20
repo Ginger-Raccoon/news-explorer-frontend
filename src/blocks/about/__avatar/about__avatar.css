@@ -1,0 +1,19 @@
+.about__avatar {
+  border-radius: 1000px;
+  display: block;
+  width: 272px;
+}
+
+@media screen and (min-width: 704px) {
+  .about__avatar {
+    width: 232px;
+    height: 232px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .about__avatar {
+    min-width: 464px;
+    min-height: 464px;
+  }
+}

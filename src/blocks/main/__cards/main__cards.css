@@ -1,0 +1,28 @@
+.main__cards {
+  margin: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 704px) {
+  .main__cards {
+    max-width: 696px;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 804px) {
+  .main__cards {
+    min-width: 726px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .main__cards {
+    margin-top: 64px;
+    max-width: 1232px;
+    justify-content: flex-start;
+  }
+}

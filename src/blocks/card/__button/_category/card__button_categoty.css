@@ -1,0 +1,21 @@
+.card__button_category {
+  margin-right: 128px;
+  width: 88px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 704px) {
+  .card__button_category {
+    margin-top: -39px;
+    margin-right: 120px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+ .card__button_category {
+   margin-right: 208px;
+ }
+}

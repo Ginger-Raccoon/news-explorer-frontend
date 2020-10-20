@@ -1,0 +1,9 @@
+.header__button_sandwich {
+  background-image: url('../../../../images/sandwitch.svg');
+}
+
+@media screen and (min-width: 704px) {
+  .header__button_sandwich {
+    display: none;
+  }
+}

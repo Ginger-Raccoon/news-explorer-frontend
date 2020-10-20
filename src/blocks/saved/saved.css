@@ -1,0 +1,10 @@
+@import url('./__container/saved__container.css');
+@import url('./__page-name/saved__page-name.css');
+@import url('./__title/saved__title.css');
+@import url('./__subtitle/saved__subtitle.css');
+@import url('./__keyword/saved__keyword.css');
+
+
+.saved {
+  margin: 0 auto;
+}

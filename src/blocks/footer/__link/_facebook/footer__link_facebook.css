@@ -1,0 +1,9 @@
+.footer__link_facebook {
+  margin-left: 24px;
+}
+
+@media screen and (min-width: 1240px) {
+  .footer__link_facebook {
+    margin-left: 26px;
+  }
+}

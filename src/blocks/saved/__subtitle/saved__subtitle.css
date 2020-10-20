@@ -1,0 +1,11 @@
+.saved__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 16px 0 0 -3px;
+}
+
+@media screen and (min-width: 704px) {
+  .saved__subtitle {
+    min-width: 452px;
+  }
+}

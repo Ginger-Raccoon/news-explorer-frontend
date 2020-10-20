@@ -1,0 +1,16 @@
+.main__container {
+  min-width: 288px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 704px) {
+  .main__container {
+    max-width: 696px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .main__container {
+    max-width: 1232px;
+  }
+}
