@@ -1,5 +1,5 @@
 .header_photo {
-  background-image: url('../../../images/header_background_mob.jpg');
+  background-image: url(../../../images/header_background_mob.jpg);
 }
 
 @media screen and (min-width: 704px) {

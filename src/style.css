@@ -1,2 +1,2 @@
-@import url('../pages/index.css');
-@import url('../pages/user.css');
+@import url('./styles/index.css');
+@import url('./styles/favorit.css');

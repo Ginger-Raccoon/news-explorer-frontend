@@ -62,7 +62,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'style.[contenthash].css',
+            filename: 'styles/[name].[contenthash].css',
         }),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
@@ -70,14 +70,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             // Означает, что:
             inject: false, // стили НЕ нужно прописывать внутри тегов
-            template: './src/pages/index/index.html', // откуда брать образец для сравнения с текущим видом проекта
+            template: './src/pages/index.html', // откуда брать образец для сравнения с текущим видом проекта
             filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
             chunks: ['main'] //указываем точку входа первой страницы
         }),
         new HtmlWebpackPlugin({
             // Означает, что:
             inject: false, // стили НЕ нужно прописывать внутри тегов
-            template: './src/pages/favorit/favorit.html', // откуда брать образец для сравнения с текущим видом проекта
+            template: './src/pages/favorit.html', // откуда брать образец для сравнения с текущим видом проекта
             filename: 'favorit.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
             chunks: ['favorit'] //указываем точку входа второй страницы
         }),

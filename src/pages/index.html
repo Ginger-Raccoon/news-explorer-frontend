@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News explorer</title>
-  <link rel="shortcut icon" href="<%=require('../../images/favicon.png')%>" type="image/png">
+  <link rel="shortcut icon" href="<%=require('../images/favicon.png')%>" type="image/png">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
   <!--При открытии формы на боди будет ставится, body_OvHidden, чтобы не было прокрутки вниз -->
@@ -49,7 +49,7 @@
         <div class="main__cards">
           <div class="card main__card">
             <div class="card__photo">
-              <img src="<%=require('../../images/forcardexample.png')%>" alt="" class="card__img">
+              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
               <!-- card__button_saved сохраняет статью -->
               <div class="card__buttons">
                 <button class="card__button card__button_auth button">Войдите, чтобы сохранять статьи</button>
@@ -63,7 +63,7 @@
           </div>
           <div class="card main__card">
             <div class="card__photo">
-              <img src="<%=require('../../images/forcardexample.png')%>" alt="" class="card__img">
+              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
               <!-- card__button_saved сохраняет статью -->
               <div class="card__buttons">
                 <button class="card__button card__button_auth button">Войдите, чтобы сохранять статьи</button>
@@ -77,7 +77,7 @@
           </div>
           <div class="card main__card">
             <div class="card__photo">
-              <img src="<%=require('../../images/forcardexample.png')%>" alt="" class="card__img">
+              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
               <!-- card__button_saved сохраняет статью -->
               <div class="card__buttons">
                 <button class="card__button card__button_auth button">Войдите, чтобы сохранять статьи</button>
@@ -100,7 +100,7 @@
     </section>
     <section class="about page__section">
       <div class="about__container">
-        <img src="<%=require('../../images/foravatarexample.png')%>" alt="" class="about__avatar">
+        <img src="<%=require('../images/foravatarexample.png')%>" alt="" class="about__avatar">
         <div class="about__text-container">
           <h2 class="about__title">Об авторе</h2>
           <p class="about__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -111,7 +111,7 @@
     <!-- popup_isOpen открывает все попапы-->
     <div class="popup popup__auth">
       <div class="popup__content">
-        <img src="<%=require('../../images/close.svg')%>" alt="close" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close">
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form">
           <div class="popup__input-container">
@@ -134,7 +134,7 @@
     </div>
     <div class="popup popup__registration">
       <div class="popup__content">
-        <img src="<%=require('../../images/close.svg')%>" alt="close" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close">
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form">
           <div class="popup__input-container">
@@ -162,7 +162,7 @@
     </div>
     <div class="popup popup__success ">
       <div class="popup__content">
-        <img src="<%=require('../../images/close.svg')%>" alt="close" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close">
         <div class="popup__input-container">
           <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
           <span class="popup__text popup__text_link popup__text_success ">Войти</span>
@@ -176,8 +176,8 @@
         <li class=""><a href="#" class="footer__link footer__link_ynd link">Яндекс.Практикум</a></li>
       </ul>
       <ul class="footer__list list footer__social">
-        <li><a href="" class="footer__link link"><img src="<%=require('../../images/github.png')%>" alt="" class="footer__link footer__link_git"></a></li>
-        <li><a href="" class="footer__link link"><img src="<%=require('../../images/Facebook.png')%>" alt="" class="footer__link footer__link_facebook"></a></li>
+        <li><a href="" class="footer__link link"><img src="<%=require('../images/github.png')%>" alt="" class="footer__link footer__link_git"></a></li>
+        <li><a href="" class="footer__link link"><img src="<%=require('../images/Facebook.png')%>" alt="" class="footer__link footer__link_facebook"></a></li>
       </ul>
     </footer>
   </div>

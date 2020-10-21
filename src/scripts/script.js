@@ -1,6 +1,6 @@
 'use strict'
 
-import '../pages/index/index.css';
+import '../styles/index.css';
 
 
 (function () {
