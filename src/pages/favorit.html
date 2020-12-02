@@ -15,35 +15,37 @@
       <!-- header__top_mobile добавляется при открытии мобильного меню-->
       <div class="header__top">
         <!-- header__logo_white-theme белая тема лого-->
-        <a href="#" class="header__logo header__logo_white-theme link">NewsExplorer</a>
+        <a href="/index.html" class="header__logo header__logo_white-theme link">NewsExplorer</a>
         <!-- header__button_sandwich меняется на header__button_close-->
         <!-- header__button_sandwich_white-theme белая тема бургера -->
         <a href="#" class="header__button header__button_sandwich header__button_sandwich_white-theme link"></a>
         <!-- header__menu_mobile добавляется при открытии мобильного меню-->
         <nav class="header__menu menu">
           <ul class="menu__list list">
-            <li class="menu__li"><a href="index.html" class="menu__link link link_white-theme">Главная</a></li>
-            <li class="menu__li"><a href="favorit.html" class="menu__link menu__link_active menu__link_active_white-theme link link_white-theme">Сохранённые статьи</a></li>
-            <li class="menu__li"><button class="button menu__button menu__button_exit menu__button_white-theme">Грета</button></li>
+            <li class="menu__li"><a href="index.html" class="menu__link link link_white-theme ">Главная</a></li>
+            <li class="menu__li menu__li_save menu__li_unlogin"><a href="favorit.html" class="menu__link menu__link_active  menu__link_active_white-theme link link_white-theme">Сохранённые статьи</a></li>
+            <li class="menu__li"><button class="button menu__button menu__button_white-theme menu__button_exit menu__button_exit_white-theme">Грета</button></li>
+            <li class="menu__li menu__li "><button class="button menu__button menu__button_auth menu__button_white-theme">Авторизоваться</button></li>
           </ul>
         </nav>
       </div>
       <section class="saved header__saved">
         <div class="saved__container">
           <p class="saved__page-name">Сохранённые статьи</p>
-          <h1 class="saved__title">Грета, у вас 5 сохранённых статей</h1>
-          <p class="saved__subtitle">По ключевым словам: <span class="saved__keyword">Природа, Тайга</span> и <span class="saved__keyword">2-м другим.</span> </p>
+          <h1 class="saved__title"><span class="saved__title saved__title_name">Грета</span>, у вас <span class="saved__title saved__title_quantity">5</span> <span class="saved__title saved__title_ending">сохранённых статей</span></h1>
+          <p class="saved__subtitle">По ключевым словам: <span class="saved__first-keyword saved_keyword">Природа</span>, <span class="saved__second-keyword saved_keyword">Тайга</span> <span class="saved__connector">и</span> <span class="saved__quantity-keywords saved_keyword">2-м</span> <span class="saved__others-keywords">другим</span>.</p>
         </div>
       </section>
     </header>
     <section class="main main_favorit page__section">
       <div class="main__container">
         <div class="main__cards">
-          <div class="card main__card">
+           <!-- Пример верстки карточки -->
+          <!-- <div class="card main__card">
             <div class="card__photo">
               <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
               <!-- card__button_saved сохраняет статью -->
-              <div class="card__buttons">
+              <!-- <div class="card__buttons">
                 <button class="card__button card__button_category button">Природа</button>
                 <button class="card__button card__button_delete button"></button>
               </div>
@@ -52,63 +54,9 @@
             <h3 class="card__title">Национальное достояние – парки</h3>
             <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
             <span class="card__source">Лента.ру</span>
-          </div>
-          <div class="card main__card">
-            <div class="card__photo">
-              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
-              <!-- card__button_saved сохраняет статью -->
-              <div class="card__buttons">
-                <button class="card__button card__button_category button">Природа</button>
-                <button class="card__button card__button_delete button"></button>
-              </div>
-            </div>
-            <span class="card__date">2 августа, 2019</span>
-            <h3 class="card__title">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-            <span class="card__source">Лента.ру</span>
-          </div>
-          <div class="card main__card">
-            <div class="card__photo">
-              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
-              <!-- card__button_saved сохраняет статью -->
-              <div class="card__buttons">
-                <button class="card__button card__button_category button">Природа</button>
-                <button class="card__button card__button_delete button"></button>
-              </div>
-            </div>
-            <span class="card__date">2 августа, 2019</span>
-            <h3 class="card__title">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-            <span class="card__source">Лента.ру</span>
-          </div>
-          <div class="card main__card">
-            <div class="card__photo">
-              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
-              <!-- card__button_saved сохраняет статью -->
-              <div class="card__buttons">
-                <button class="card__button card__button_category button">Природа</button>
-                <button class="card__button card__button_delete button"></button>
-              </div>
-            </div>
-            <span class="card__date">2 августа, 2019</span>
-            <h3 class="card__title">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-            <span class="card__source">Лента.ру</span>
-          </div>
-          <div class="card main__card">
-            <div class="card__photo">
-              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
-              <!-- card__button_saved сохраняет статью -->
-              <div class="card__buttons">
-                <button class="card__button card__button_category button">Природа</button>
-                <button class="card__button card__button_delete button"></button>
-              </div>
-            </div>
-            <span class="card__date">2 августа, 2019</span>
-            <h3 class="card__title">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-            <span class="card__source">Лента.ру</span>
-          </div>
+          </div> -->
+          <!-- Конец примера -->
+
         </div>
       </div>
       
@@ -116,12 +64,12 @@
     <footer class="footer footer_favorit page__section">
       <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
       <ul class="footer__list list footer__links">
-        <li class=""><a href="#" class="footer__link footer__link_main link">Главная</a></li>
-        <li class=""><a href="#" class="footer__link footer__link_ynd link">Яндекс.Практикум</a></li>
+        <li class=""><a href="/index.html" class="footer__link footer__link_main link">Главная</a></li>
+        <li class=""><a href="https://praktikum.yandex.ru" target="_blank" class="footer__link footer__link_ynd link">Яндекс.Практикум</a></li>
       </ul>
       <ul class="footer__list list footer__social">
-        <li><a href="" class="footer__link link"><img src="<%=require('../images/github.png')%>" alt="" class="footer__link footer__link_git"></a></li>
-        <li><a href="" class="footer__link link"><img src="<%=require('../images/Facebook.png')%>" alt="" class="footer__link footer__link_facebook"></a></li>
+        <li><a href="https://github.com/Ginger-Raccoon" target="_blank" class="footer__link link"><img src="<%=require('../images/github.png')%>" alt="" class="footer__link footer__link_git"></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100014062291121" target="_blank" class="footer__link link"><img src="<%=require('../images/Facebook.png')%>" alt="" class="footer__link footer__link_facebook"></a></li>
       </ul>
     </footer>
    

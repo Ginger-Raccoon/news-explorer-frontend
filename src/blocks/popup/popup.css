@@ -10,6 +10,7 @@
 @import url('./__error-message/popup__error-message.css');
 @import url('./__button/popup__button.css');
 @import url('./__button/_disabled/popup__button_disabled.css');
+@import url('./__request-error/popup__request-error.css');
 
 
 .popup {

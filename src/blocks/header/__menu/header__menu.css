@@ -1,5 +1,3 @@
-@import url('./_mobile/header__menu_mobile.css');
-
 .header__menu {
   display: none;
 }
@@ -9,3 +7,5 @@
     display: flex;
   }
 }
+
+@import url('./_mobile/header__menu_mobile.css');
