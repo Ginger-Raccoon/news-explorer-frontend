@@ -22,7 +22,7 @@
 @media screen and (min-width: 1240px) {
   .main__cards {
     margin-top: 64px;
-    max-width: 1232px;
+    max-width: 1278px;
     justify-content: flex-start;
   }
 }

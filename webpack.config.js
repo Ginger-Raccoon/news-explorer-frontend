@@ -9,8 +9,8 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 
 module.exports = {
     entry: {
-        main: './src/scripts/script.js',
-        favorit: './src/scripts/favorit.js'
+        main: './src/js/index.js',
+        favorit: './src/js/favorit-news/index.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

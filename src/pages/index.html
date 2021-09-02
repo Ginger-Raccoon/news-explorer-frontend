@@ -16,7 +16,7 @@
     <header class="header header_photo page__section">
       <!-- header__top_mobile добавляется при открытии мобильного меню-->
       <div class="header__top">
-        <a href="#" class="header__logo link">NewsExplorer</a>
+        <a href="/index.html " class="header__logo link">NewsExplorer</a>
         <!-- header__button_sandwich меняется на header__button_close-->
         <a href="#" class="header__button header__button_sandwich  link"></a>
         <!-- header__menu_mobile добавляется при открытии мобильного меню-->
@@ -24,10 +24,10 @@
           <ul class="menu__list list">
            <!-- menu__li_unlogin скрывает кнопку -->
             <li class="menu__li"><a href="#" class="menu__link menu__link_active link">Главная</a></li>
-            <li class="menu__li menu__li"><a href="favorit.html" class="menu__link link">Сохранённые статьи</a></li>
-            <li class="menu__li menu__li_unlogin"><button class="menu__button menu__button_exit button">Грета</button></li>
+            <li class="menu__li menu__li_save menu__li_unlogin"><a href="favorit.html" class="menu__link link">Сохранённые статьи</a></li>
+            <li class="menu__li "><button class="menu__button menu__button_exit button menu__button_exit_inital hidden">Грета</button></li>
            <!-- menu__li_needAuth показывает кнопку неавторизованному пользователю -->
-            <li class="menu__li menu__li"><button class="button menu__button">Авторизоваться</button></li>
+            <li class="menu__li menu__li "><button class="button menu__button menu__button_auth ">Авторизоваться</button></li>
           </ul>
         </nav>
       </div>
@@ -42,16 +42,16 @@
         </div>
       </section>
     </header>
-    <section class="main page__section">
+    <section class="main page__section hidden">
       <div class="main__container">
          <h2 class="main__title">Результаты поиска</h2>
-      <!-- Пример верстки карточки -->
         <div class="main__cards">
-          <div class="card main__card">
+          <!-- Пример верстки карточки -->
+          <!-- <div class="card main__card">
             <div class="card__photo">
               <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
               <!-- card__button_saved сохраняет статью -->
-              <div class="card__buttons">
+              <!-- <div class="card__buttons">
                 <button class="card__button card__button_auth button">Войдите, чтобы сохранять статьи</button>
                 <button class="card__button card__button_save card__button_save_unsaved button"></button>
               </div>
@@ -60,109 +60,87 @@
             <h3 class="card__title">Национальное достояние – парки</h3>
             <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
             <span class="card__source">Лента.ру</span>
-          </div>
-          <div class="card main__card">
-            <div class="card__photo">
-              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
-              <!-- card__button_saved сохраняет статью -->
-              <div class="card__buttons">
-                <button class="card__button card__button_auth button">Войдите, чтобы сохранять статьи</button>
-                <button class="card__button card__button_save card__button_save_unsaved button"></button>
-              </div>
-            </div>
-            <span class="card__date">2 августа, 2019</span>
-            <h3 class="card__title">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-            <span class="card__source">Лента.ру</span>
-          </div>
-          <div class="card main__card">
-            <div class="card__photo">
-              <img src="<%=require('../images/forcardexample.png')%>" alt="" class="card__img">
-              <!-- card__button_saved сохраняет статью -->
-              <div class="card__buttons">
-                <button class="card__button card__button_auth button">Войдите, чтобы сохранять статьи</button>
-                <button class="card__button card__button_save card__button_save_unsaved button"></button>
-              </div>
-            </div>
-            <span class="card__date">2 августа, 2019</span>
-            <h3 class="card__title">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-            <span class="card__source">Лента.ру</span>
-          </div>
+          </div> -->
+          <!-- Конец примера -->
         </div>
         
         <button class="main__more button">Показать еще</button>
       </div>  
     </section>
-    <section class="empty page__section">
-      <div class="empty__loader"></div>
-      <p class="empty__text">Поиск...</p>
+    <section class="empty page__section hidden">
+      <div class="empty__loader hidden"></div>
+      <p class="empty__text empty__text_loading hidden">Поиск...</p>
+      <p class="emtpy__text emty__text_not-found hidden">Не найдено, измените запрос и попробуйте снова</p> 
+      <p class="empty__text empty__text_error hidden">Во время запроса произошла ошибка. Возможно, проблема с
+        соединением или сервер недоступен. Подождите немного и попробуйте ещё раз</p>
     </section>
     <section class="about page__section">
       <div class="about__container">
-        <img src="<%=require('../images/foravatarexample.png')%>" alt="" class="about__avatar">
+        <img src="<%=require('../images/foravatarexample.jpg')%>" alt="" class="about__avatar">
         <div class="about__text-container">
           <h2 class="about__title">Об авторе</h2>
-          <p class="about__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-          <p class="about__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+          <p class="about__text">Решил поменять род деятельности и уйти в сферу IT, исполнить мечту детства. Раньше все меня пугали сложностью и высоким порогом вхождения, решил что трудности меня не пугают, а мечты должны сбываться. Это мой дипломный проект для "Яндекс.Практикум", где я прошел обучение по специальности "Веб-разработчик".</p>
+          <p class="about__text">Данный проект призван показать то, чему я научился почти за год а именно: HTML / CSS (Adaptive & Responsive), JS, Node.js(Express), Webpack, Git, Rest API. </p>
+          <p class="about__text">Дальнейший рост прозрачен и понятен, углубление в основы, изучение фреймворков (React, Vue), препроцессоров (SASS(SCSS), LESS), разнообразные Pet Project's, большой фанат <a class="about__link link" target="_blank" href="https://habr.com/ru/company/southbridge/blog/482452/">"Бразильской системы"</a>, так что давайте учиться вместе!</p>
         </div>
       </div>
     </section>
     <!-- popup_isOpen открывает все попапы-->
     <div class="popup popup__auth">
       <div class="popup__content">
-        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close popup__close_auth">
         <h3 class="popup__title">Вход</h3>
-        <form class="popup__form">
+        <form class="popup__form" novalidate>
           <div class="popup__input-container">
             <p class="popup__text">Email</p>
-            <input type="text" class="popup__input">
-            <!--оставленно для примера-->
-            <span class="popup__error-message">Неправильный формат email</span>
+            <input type="text" class="popup__input" placeholder="ivanov@gmail.com" name="auth-email" id="auth-email" pattern="^[A-Za-z0-9-_.]+@[a-zA-Z0-9-_]+(.[A-Za-z0-9]+?)?\.[a-zA-Z0-9]+" required>
+            <span class="popup__error-message" id="error-auth-email"></span>
           </div>
           <div class="popup__input-container">
             <p class="popup__text">Пароль</p>
-            <input type="text" class="popup__input">
-            <span class="popup__error-message"></span>
+            <input type="password" class="popup__input" placeholder="*****" name="auth-password" id="auth-password" minlength="5" maxlength="30" required>
+            <span class="popup__error-message" id="error-auth-password"></span>
           </div>
+          <span class="popup__request-error" id="error-auth-form"></span>
           <button class=" popup__button popup__button_disabled">Войти</button>
           <div class="popup__input-container">
-            <p class="popup__text popup__text_and">или<span class="popup__text popup__text_link">Зарегистрироваться</span></p>
+            <p class="popup__text popup__text_and">или<span class="popup__text popup__text_reg popup__text_link">Зарегистрироваться</span></p>
           </div>
         </form>
       </div>
     </div>
     <div class="popup popup__registration">
       <div class="popup__content">
-        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close popup__close_reg">
         <h3 class="popup__title">Регистрация</h3>
-        <form class="popup__form">
+        <form class="popup__form" novalidate>
           <div class="popup__input-container">
             <p class="popup__text">Email</p>
-            <input type="text" class="popup__input">
+            <input type="text" class="popup__input" name="reg-email" id="reg-email" pattern="^[A-Za-z0-9-_.]+@[a-zA-Z0-9-_]+(.[A-Za-z0-9]+?)?\.[a-zA-Z0-9]+" placeholder="ivanov@gmail.com" required>
             <!--оставленно для примера-->
-            <span class="popup__error-message">Неправильный формат email</span>
+            <span class="popup__error-message" id="error-reg-email"></span>
           </div>
           <div class="popup__input-container">
             <p class="popup__text">Пароль</p>
-            <input type="text" class="popup__input">
-            <span class="popup__error-message"></span>
+            <input type="text" class="popup__input" name="reg-password" placeholder="*****" id="reg-password" minlength="5" maxlength="30" required>
+            <span class="popup__error-message" id="error-reg-password"></span>
           </div>
           <div class="popup__input-container">
             <p class="popup__text">Имя</p>
-            <input type="text" class="popup__input">
-            <span class="popup__error-message"></span>
+            <input type="text" class="popup__input" name="reg-name" id="reg-name" placeholder="Иван" required minlength="2" maxlength="30">
+            <span class="popup__error-message" id="error-reg-name"></span>
           </div>
+          <span class="popup__request-error" id="error-auth-form"></span>
           <button class=" popup__button popup__button_disabled">Зарегистрироваться</button>
           <div class="popup__input-container">
-            <p class="popup__text popup__text_and">или<span class="popup__text popup__text_link">Войти</span></p>
+            <p class="popup__text popup__text_and">или<span class="popup__text popup__text_auth popup__text_link">Войти</span></p>
           </div>
         </form>
       </div>
     </div>
     <div class="popup popup__success ">
       <div class="popup__content">
-        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="close" class="popup__close popup__close_success">
         <div class="popup__input-container">
           <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
           <span class="popup__text popup__text_link popup__text_success ">Войти</span>
@@ -173,11 +151,11 @@
       <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
       <ul class="footer__list list footer__links">
         <li class=""><a href="#" class="footer__link footer__link_main link">Главная</a></li>
-        <li class=""><a href="#" class="footer__link footer__link_ynd link">Яндекс.Практикум</a></li>
+        <li class=""><a href="https://praktikum.yandex.ru" target="_blank" class="footer__link footer__link_ynd link">Яндекс.Практикум</a></li>
       </ul>
       <ul class="footer__list list footer__social">
-        <li><a href="" class="footer__link link"><img src="<%=require('../images/github.png')%>" alt="" class="footer__link footer__link_git"></a></li>
-        <li><a href="" class="footer__link link"><img src="<%=require('../images/Facebook.png')%>" alt="" class="footer__link footer__link_facebook"></a></li>
+        <li><a href="https://github.com/Ginger-Raccoon" target="_blank" class="footer__link link"><img src="<%=require('../images/github.png')%>" alt="" class="footer__link footer__link_git"></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100014062291121" target="_blank" class="footer__link link"><img src="<%=require('../images/Facebook.png')%>" alt="" class="footer__link footer__link_facebook"></a></li>
       </ul>
     </footer>
   </div>

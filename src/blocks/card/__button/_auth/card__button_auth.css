@@ -5,6 +5,7 @@
   line-height: 12px;
   margin-right: 5px;
   border-radius: 8px;
+  order: -1;
 }
 
 @media screen and (min-width: 704px) {

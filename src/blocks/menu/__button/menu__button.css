@@ -1,4 +1,5 @@
-@import url('./_exit/menu__button_exit.css');
+@import url('./_exit_inital/menu__button_exit_inital.css');
+@import url('./_exit_white-theme/menu__button_exit_white-theme.css');
 
 
 .menu__button {

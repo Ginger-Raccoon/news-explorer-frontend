@@ -4,5 +4,11 @@
   position: relative;
   box-sizing: border-box;
   padding: 34px 36px;
-  max-width: 430px;
+  min-width: 320px;
+}
+
+@media screen and (min-width: 704px) {
+  .popup__content {
+    min-width: 430px;
+  }
 }

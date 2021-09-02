@@ -1,0 +1,6 @@
+.menu__button_exit_white-theme::after {
+  content: url('../../../../images/button_exit_white-theme.svg');
+  position: relative;
+  margin-left: 5px;
+  top: 2px;
+}

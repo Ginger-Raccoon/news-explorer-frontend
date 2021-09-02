@@ -2,6 +2,7 @@
   border-radius: 1000px;
   display: block;
   width: 272px;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 704px) {

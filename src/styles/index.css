@@ -15,6 +15,7 @@
 @import url('../blocks/list/list.css');
 @import url('../blocks/popup/popup.css');
 @import url('../blocks/popup/_isOpen/popup_isOpen.css');
+@import url('../blocks/hidden/hidden.css');
 
 .body_OvHidden {
   overflow-y: hidden;
