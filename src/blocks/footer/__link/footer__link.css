@@ -1,0 +1,8 @@
+@import url('./_facebook/footer__link_facebook.css');
+@import url('./_ynd/footer__link_ynd.css');
+
+.footer__link {
+  font-size: 18px;
+  line-height: 48px;
+  color: #1A1B22;
+}

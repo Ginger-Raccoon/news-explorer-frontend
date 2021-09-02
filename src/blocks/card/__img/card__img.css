@@ -1,0 +1,6 @@
+.card__img {
+  padding-bottom: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+}

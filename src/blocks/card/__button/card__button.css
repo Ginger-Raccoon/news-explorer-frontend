@@ -1,0 +1,10 @@
+@import url('./_auth/card__button_auth.css');
+@import url('./_save/card__button_save.css');
+@import url('./_delete/card__button_delete.css');
+@import url('./_category/card__button_categoty.css');
+
+.card__button {
+  height: 40px;
+  border: none;
+  padding: 0;
+}

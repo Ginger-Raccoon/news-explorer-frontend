@@ -1,0 +1,25 @@
+.card__buttons {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 704px) {
+  .card__buttons {
+    margin-right: 8px;
+    margin-top: 8px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .card__buttons {
+    margin-top: 24px;
+    margin-right: 24px;
+    flex-direction: row;
+  }
+}

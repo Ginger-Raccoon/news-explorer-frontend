@@ -1,0 +1,11 @@
+@import url('./_mobile/header__menu_mobile.css');
+
+.header__menu {
+  display: none;
+}
+
+@media screen and (min-width: 704px) {
+  .header__menu {
+    display: flex;
+  }
+}

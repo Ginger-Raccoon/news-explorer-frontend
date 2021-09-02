@@ -1,0 +1,18 @@
+.search__container {
+  margin: 0 calc((100%-288px)/2);
+  min-width: 288px;
+}
+
+@media screen and (min-width: 500px) {
+  .search__container {
+    margin: 0 calc((100%-385px)/2);
+    min-width: 385px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .search__container {
+    margin: 0 calc((100%-608px)/2);
+    min-width: 608px;
+  }
+}

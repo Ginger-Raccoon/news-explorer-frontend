@@ -1,0 +1,28 @@
+@import url('./__link/footer__link.css');
+@import url('./__links/footer__links.css');
+@import url('./__social/footer__social.css');
+@import url('./__copyright/footer__copyright.css');
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px 16px 20px;
+}
+
+@media screen and (min-width: 704px) {
+  .footer {
+    display: flex;
+    align-items: baseline;
+    min-width: 688px;
+    justify-content: space-between;
+    margin: 61px auto 0;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .footer {
+    margin-top: 108px;
+    margin-bottom: 26px;
+    min-width: 1232px;
+  }
+}

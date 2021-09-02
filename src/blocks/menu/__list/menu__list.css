@@ -1,0 +1,7 @@
+@media screen and (min-width: 704px) {
+  .menu__list {
+    display: flex;
+    margin: 0;
+    align-items: center;
+  } 
+}

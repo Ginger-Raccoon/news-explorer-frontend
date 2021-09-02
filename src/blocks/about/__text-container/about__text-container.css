@@ -1,0 +1,20 @@
+@import url('../__title/about__title.css');
+@import url('../__text/about__text.css');
+
+.about__text-container {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 704px) {
+  .about__text-container {
+    margin: -11px 0 11px 32px;
+    max-width: 424px  ;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__text-container {
+    margin: 51px 0px 0px 56px;
+    max-width: 600px;
+  }
+}

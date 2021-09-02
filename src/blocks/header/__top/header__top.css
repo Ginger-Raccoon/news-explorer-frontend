@@ -1,0 +1,28 @@
+@import url('../__logo/header__logo.css');
+@import url('./_mobile/header__top_mobile.css');
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #C4C4C4 1px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px;
+}
+
+@media screen and (min-width: 704px) {
+  .header__top {
+    align-items: baseline;
+    padding: 14px calc((100% - 688px)/2) 12px;
+    min-width: 688px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .header__top {
+    font-size: 18px;
+    padding: 19px calc((100% - 1232px)/2) 13px;
+    max-width: 1232px;
+  }
+}

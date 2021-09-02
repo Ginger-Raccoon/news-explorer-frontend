@@ -1,0 +1,6 @@
+@import url('./_white-theme/header__logo_white-theme.css');
+
+.header__logo {
+  font-family: 'RobotoSlab';
+  font-weight: 700;
+}

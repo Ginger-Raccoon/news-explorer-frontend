@@ -1,0 +1,17 @@
+.about__container {
+  max-width: 288px;
+}
+
+@media screen and (min-width: 704px) {
+  .about__container {
+    display: flex;
+    max-width: 688px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .about__container {
+    min-width: 1120px;
+    max-width: 1440px;
+  }
+}

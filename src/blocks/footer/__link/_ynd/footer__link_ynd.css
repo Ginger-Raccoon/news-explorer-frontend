@@ -1,0 +1,11 @@
+@media screen and (min-width: 704px) {
+ .footer__link_ynd {
+    margin-left: 15px;
+  } 
+}
+
+@media screen and (min-width: 1240px) {
+  .footer__link_ynd {
+    margin-left: 26px;
+  }
+}

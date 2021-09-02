@@ -1,0 +1,10 @@
+.header__menu_mobile {
+  display: block;
+  position: absolute;
+  background: #1a1b22;
+  z-index: 3;
+  top: 56px;
+  width: 100%;
+  top: 57px;
+  left: 0px;
+}

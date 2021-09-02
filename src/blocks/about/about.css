@@ -1,0 +1,17 @@
+@import url('./__container/about__container.css');
+@import url('./__avatar/about__avatar.css');
+@import url('./__text-container/about__text-container.css');
+
+
+.about {
+  margin: 32px auto 0px;
+}
+
+
+
+@media screen and (min-width: 1240px) {
+  .about {
+    margin-top: 80px;
+    
+  }
+}

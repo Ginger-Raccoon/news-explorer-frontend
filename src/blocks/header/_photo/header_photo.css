@@ -1,0 +1,15 @@
+.header_photo {
+  background-image: url(../../../images/header_background_mob.jpg);
+}
+
+@media screen and (min-width: 704px) {
+  .header_photo {
+    background-image: url('../../../images/header_background_tablet.png');
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .header_photo {
+    background-image:  url('../../../images/header_background.jpg');
+  }
+}
